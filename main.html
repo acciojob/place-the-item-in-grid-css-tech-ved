@@ -1,6 +1,37 @@
-<div class="holder">
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
-  <div class="item">4</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2x2 Grid</title>
+    <style>
+        .holder {
+            width: 200px;
+            height: 200px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+            grid-template-rows: repeat(2, 1fr);    /* 2 equal rows */
+            border: 2px solid black;
+        }
+
+        .item {
+            background-color: lightblue;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="holder">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+</body>
+</html>
